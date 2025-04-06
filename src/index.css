@@ -1,0 +1,271 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #020817;
+  overflow-x: hidden;
+}
+
+.canvas-container {
+  overflow-x: hidden;
+  position: absolute; /* Tetap di tempat */
+  width: 100%; /* Lebar penuh */
+  height: 40%; /* Tinggi penuh */
+  z-index: -1; /* Agar di belakang konten */
+  pointer-events: none; /* Agar tidak mengganggu interaksi */
+  padding-bottom: 30%;
+}
+
+.content {
+  z-index: 1;
+}
+
+.s-shadow{
+  transition: all 0.3s ease-in-out;
+}
+
+.s-shadow:hover{
+  text-shadow: 0 0 20px #8c9aff;
+}
+
+.h-hover{
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.h-hover:hover{
+  text-shadow: 5px 5px 10px black;
+  transform: translateY(-5px);
+  letter-spacing: 4px; /* Menambahkan jarak antara huruf */
+  font-size: 1em;
+}
+.service-card, .s-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.service-card:hover, .s-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5), 0 0 40px rgba(255, 105, 180, 0.5);
+  transform: translateY(-5px);
+}
+
+.s-card:hover .th3{
+  transform: scale(1.3);
+}
+
+.th2{
+  transition: all 0.3s ease;
+}
+
+.th2:hover{
+  font-size: 180%;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 7px;
+  background: #1a1f3d;
+  z-index: -1;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%; /* Lebih kecil */
+  height: 30%; /* Lebih kecil */
+  background-image: linear-gradient(180deg, #8c9aff, #efb4ff);
+  transform: translate(-50%, -50%) scale(0); /* Awalnya kecil */
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.service-card:hover::before {
+  transform: scale(1) rotate(0deg);
+  animation: rotBGimg 3s linear infinite;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: translate(-50%, -50%) scale(1.5) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.5) rotate(360deg);
+  }
+}
+
+
+
+/* card 2 */
+.service-card2 {
+  position: relative;
+  margin: auto;
+  background: #1a1f3d;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: start;
+  transition: all 0.3s ease;
+  padding: 2em;
+  
+  
+}
+.ser-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: start;
+  
+  transition: all 0.3s ease;
+  padding: 10px;
+  background-color: transparent;
+
+  filter: drop-shadow(0px 0px 5px #8c9aff) opacity(0.8);
+  
+}
+
+
+.ser-card::before {
+  --angle: 0deg;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    #8c9aff,
+    #efb4ff
+  );
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  animation: spin 3s linear infinite;
+  
+  filter: saturate(200%) blur(0.5rem);
+  
+} 
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.ser-card2{
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: start;
+  
+  transition: all 0.3s ease;
+  padding: 10px;
+  background-color: transparent;
+
+  filter: drop-shadow(0px 0px 5px #8c9aff) opacity(0.8);
+  
+}
+
+
+.ser-card2::before {
+  --angle: 180deg;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    #8c9aff,
+    #efb4ff
+  );
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  animation: spinn 3s linear infinite;
+  
+  filter: saturate(200%) blur(0.5rem);
+  
+} 
+@keyframes spinn {
+  from {
+    --angle: 180deg;
+  }
+  to {
+    --angle: 540deg;
+  }
+}
+/* .service-card2:hover::before {
+  animation: spin 3s linear infinite;
+  filter: blur(1.5rem);
+  opacity: 0.5;
+} */
+
+/* .service-card2::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background-image: conic-gradient(
+    transparent 70%,
+    #8c9aff,
+    #efb4ff
+  );
+  translate:-50%, -50%;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+} */
+
+h3{
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.cont:hover .th3{
+  transform: scale(1.3);
+}
+
+.input{
+  color: white;
+  border-color: #8c9aff;
+  
+}
+
+.input:focus{
+  border-color: #020817;
+}
+
+.data-table{
+  background-color: #8c9aff;
+}
+
+.data-table:hover {
+  background-color: #efb4ff;
+  box-shadow: 0px 0px 50px rgba(255, 192, 203, 0.541);
+  
+}
