@@ -1,12 +1,12 @@
 //import React from 'react';
 import colors from '../styles';
 import { Link } from 'react-router-dom';
-import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Model from "../components/3DViewer";
-import { useEffect, useState } from 'react';
+import { lazy, useEffect, useState } from 'react';
 import {services, team, features} from '../DataSource';
 
+const Canvas = lazy(() => import('@react-three/fiber').then(m => ({ default: m.Canvas })))
 
 
 

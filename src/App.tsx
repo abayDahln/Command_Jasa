@@ -7,9 +7,9 @@ import Dashboard from './pages/Dashboard';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import ServiceDetail from './pages/ServiceDetail';
-import background from '../public/resource/Background_Aura_1.png';
-import background2 from '../public/resource/Background_Aura_2.png';
-import background3 from '../public/resource/Background_Aura_3.png';
+import background from '../public/resource/Background_Aura_1.jpg';
+import background2 from '../public/resource/Background_Aura_2.jpg';
+import background3 from '../public/resource/Background_Aura_3.jpg';
 import Footer from './components/Footer';
 
 
