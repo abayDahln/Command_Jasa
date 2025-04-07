@@ -38,7 +38,7 @@ function Navbar() {
           </button>
 
           <div className="hidden md:flex space-x-8">
-            {['/Command_Jasa/Home', '/Command_Jasa/Services', '/Command_Jasa/Contact', '/Command_Jasa/Dashboard'].map((path, index) => (
+            {['/Home', '/Services', '/Contact', '/Dashboard'].map((path, index) => (
               <Link key={index} to={path} style={{ color: isActive(path) ? colors.white : colors.secondary }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = isActive(path) ? colors.primary : colors.optionally)}
                 onMouseLeave={(e) => (e.currentTarget.style.color = isActive(path) ? colors.white : colors.secondary)}>
