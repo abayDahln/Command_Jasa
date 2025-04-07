@@ -1,7 +1,6 @@
 import { Briefcase, Cloud, Code, Cpu, DollarSign, Globe, Package, Palette, RefreshCcw, RotateCcw, Server, Gamepad, Settings, Shield, ShieldAlert, Smartphone, TrendingUp, UserCheck, UserPlus, Users, Zap } from "lucide-react";
 
 
-
 const services = [
     {
       id: 1,
@@ -45,42 +44,43 @@ const services = [
     {
       name: 'Andhika Khairul',
       role: '3D & Motion Designer',
-      image: '../../public/resource/andhika.jpg'
+      image: 'https://res.cloudinary.com/dueixuonp/image/upload/v1744012374/andhika_iobzve.jpg'
     },
     {
       name: 'Dzaki Rafif',
       role: 'Graphic & UI/UX Designer',
-      image: '../../public/resource/apip.jpg'
+      image: 'https://res.cloudinary.com/dueixuonp/image/upload/v1744012375/apip_m4ebig.jpg'
     },
     {
       name: 'Ahmad Faqih',
       role: 'Full-Stack & Game Developer',
-      image: '../../public/resource/faqih.jpg'
+      image: 'https://res.cloudinary.com/dueixuonp/image/upload/v1744012373/faqih_vshfpb.jpg'
     },
     {
       name: 'Hendri',
       role: 'Full-Stack Developer',
-      image: '../../public/resource/hendri.jpg'
+      image: 'https://res.cloudinary.com/dueixuonp/image/upload/v1744012374/hendri_cgosgl.jpg'
     },
     {
       name: 'Abby Dahlan',
       role: 'Software Developer',
-      image: '../../public/resource/abby.jpg'
+      image: 'https://res.cloudinary.com/dueixuonp/image/upload/v1744012374/abby_gjk582.jpg'
     },
     {
       name: 'Farrel Gifari',
       role: 'Software Developer',
-      image: '../../public/resource/farrel.jpg'
+      image: 'https://res.cloudinary.com/dueixuonp/image/upload/v1744012373/farrel_vm3bzu.jpg'
     },
     {
       name: 'Rizki Syahrul',
       role: 'Mobile App Developer',
-      image: '../../public/resource/rizki.jpg'
+      image: 'https://res.cloudinary.com/dueixuonp/image/upload/v1744012374/rizki_rnwxmd.jpg'
     },
     {
       name: 'Eijaz Ramadhan',
       role: 'Game Developer',
-      image: '../../public/resource/eijaz.jpg'
+      image: 'https://res.cloudinary.com/dueixuonp/image/upload/v1744012373/eijaz_x7fg6e.jpg'
+    
     },
   
   ];

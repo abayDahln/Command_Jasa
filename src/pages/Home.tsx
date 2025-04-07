@@ -9,7 +9,6 @@ import {services, team, features} from '../DataSource';
 
 
 
-
 function Home() {
   // const [isVisible, setIsVisible] = useState(true);
 
