@@ -3,9 +3,10 @@ import colors from '../styles';
 import { Link } from 'react-router-dom';
 import { OrbitControls } from "@react-three/drei";
 import Model from "../components/3DViewer";
+import { Canvas } from '@react-three/fiber'
 import { useEffect, useState } from 'react';
 import {services, team, features} from '../DataSource';
-import { Canvas } from '@react-three/fiber'
+
 
 
 
