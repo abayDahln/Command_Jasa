@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import colors from '../styles';
-import logo from '../../public/resource/command_spes_circle.jpg'
+import logo from '../../public/resource/command_spes_circle.png'
 
 function Footer() {
   const email = "abby11dahlan@gmail.com";

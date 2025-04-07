@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import colors from '../styles';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logo from '../../public/resource/command_spes_circle.jpg'
+import logo from '../../public/resource/command_spes_circle.png'
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
