@@ -1,30 +1,30 @@
 //import React from 'react';
 import colors from '../styles';
 import { Link } from 'react-router-dom';
-import { OrbitControls } from "@react-three/drei";
-import Model from "../components/3DViewer";
-import { Canvas } from '@react-three/fiber'
-import { useEffect, useState } from 'react';
+// import { OrbitControls } from "@react-three/drei";
+// import Model from "../components/3DViewer";
+// import { Canvas } from '@react-three/fiber'
+//import { useEffect, useState } from 'react';
 import {services, team, features} from '../DataSource';
 
 
 
 
 function Home() {
-  const [isVisible, setIsVisible] = useState(true);
+  // const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      const threshold = window.screen.width * 0.8;
-      setIsVisible(screenWidth >= threshold);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     const screenWidth = window.innerWidth;
+  //     const threshold = window.screen.width * 0.8;
+  //     setIsVisible(screenWidth >= threshold);
+  //   };
 
-    window.addEventListener("resize", handleResize);
-    handleResize();
+  //   window.addEventListener("resize", handleResize);
+  //   handleResize();
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   return (
     <div style={{ paddingTop: 100 }}>
@@ -53,7 +53,7 @@ function Home() {
                 
 
                 <Link
-                  to='/Services'
+                  to='/Command_Jasa/Services'
                   className="border border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-black"
                   
                 >

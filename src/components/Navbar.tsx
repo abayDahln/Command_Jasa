@@ -25,8 +25,8 @@ function Navbar() {
       <ScrollToTop />
       <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-black/30 shadow-md transition-all duration-300 z-50 px-20 py-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <img className="w-8 h-8" style={{ width: 50, height: 50 }} src={logo} alt="Logo" />
+          <Link to="/Command_Jasa" className="flex items-center space-x-2">
+            <img className="w-8 h-8 rounded-full" style={{ width: 50, height: 50 }} src={logo} alt="Logo" />
             <span className="text-xl font-bold ps-2" style={{ color: colors.textPrimary }}>CJasa</span>
           </Link>
 
@@ -38,7 +38,7 @@ function Navbar() {
           </button>
 
           <div className="hidden md:flex space-x-8">
-            {['/Home', '/Services', '/Contact', '/Dashboard'].map((path, index) => (
+            {['/Command_Jasa/Home', '/Command_Jasa/Services', '/Command_Jasa/Contact', '/Command_Jasa/Dashboard'].map((path, index) => (
               <Link key={index} to={path} style={{ color: isActive(path) ? colors.white : colors.secondary }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = isActive(path) ? colors.primary : colors.optionally)}
                 onMouseLeave={(e) => (e.currentTarget.style.color = isActive(path) ? colors.white : colors.secondary)}>
@@ -48,7 +48,7 @@ function Navbar() {
           </div>
 
           <Link
-            to="/login"
+            to="/Command_Jasa/login"
             className="hidden md:block px-6 py-2 rounded-full"
             style={{ background: colors.secondary, color: colors.textPrimary }}
             onMouseEnter={(e) => (e.currentTarget.style.background = colors.primary)}

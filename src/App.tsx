@@ -49,13 +49,13 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:id" element={<ServiceDetail />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/Command_Jasa" element={<Home />} />
+          <Route path="/Command_Jasa/login" element={<Login />} />
+          <Route path="/Command_Jasa/register" element={<Register />} />
+          <Route path="/Command_Jasa/dashboard" element={<Dashboard />} />
+          <Route path="/Command_Jasa/services" element={<Services />} />
+          <Route path="/Command_Jasa/services/:id" element={<ServiceDetail />} />
+          <Route path="/Command_Jasa/contact" element={<Contact />} />
         </Routes>
       </Layout>
     </Router>

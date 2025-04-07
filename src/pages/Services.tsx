@@ -20,7 +20,7 @@ function Services() {
         {serv.map((service, index) => (
           <Link
             key={service.id}
-            to={`/services/${service.id}`}
+            to={`/Command_Jasa/services/${service.id}`}
             className={`bg-[#1a1f3d] rounded-lg p-6 hover:transform hover:-translate-y-2 transition-all duration-300 ${(index + 1) % 2 === 1 ? 'ser-card' : 'ser-card2'}`}
           >
             <div className='service-card2'>
