@@ -38,11 +38,11 @@ function Navbar() {
           </button>
 
           <div className="hidden md:flex space-x-8">
-            {['/Command_Jasa', '/Command_Jasa/Services', '/Command_Jasa/Contact', '/Command_Jasa/Dashboard'].map((path, index) => (
+            {['/Command_Jasa/', '/Command_Jasa/Services', '/Command_Jasa/Contact', '/Command_Jasa/Dashboard'].map((path, index) => (
               <Link key={index} to={path} style={{ color: isActive(path) ? colors.white : colors.secondary }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = isActive(path) ? colors.primary : colors.optionally)}
                 onMouseLeave={(e) => (e.currentTarget.style.color = isActive(path) ? colors.white : colors.secondary)}>
-                {path.replace('/Command_Jasa', '') || path.replace('/', '') || 'Home'}
+                {path.replace('/Command_Jasa/', '') || 'Home'}
               </Link>
             ))}
           </div>
@@ -61,7 +61,7 @@ function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 bg-[#1a1f3d] rounded-lg p-4">
             <div className="flex flex-col space-y-4">
-              {['/Command_Jasa', '/Command_Jasa/Services', '/Command_Jasa/Contact', '/Command_Jasa/Dashboard', '/Command_Jasa/Login'].map((path, index) => (
+              {['/Command_Jasa/', '/Command_Jasa/Services', '/Command_Jasa/Contact', '/Command_Jasa/Dashboard', '/Command_Jasa/Login'].map((path, index) => (
                 <Link
                   key={index}
                   to={path}
@@ -70,7 +70,7 @@ function Navbar() {
                   onMouseEnter={(e) => (e.currentTarget.style.color = isActive(path) ? colors.primary : colors.optionally)}
                   onMouseLeave={(e) => (e.currentTarget.style.color = isActive(path) ? colors.white : colors.secondary)}
                 >
-                  {path.replace('/Command_Jasa', '') || path.replace('/', '') || 'Home'}
+                  {path.replace('/Command_Jasa/', '') || 'Home'}
                 </Link>
               ))}
             </div>
