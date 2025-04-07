@@ -59,9 +59,6 @@ function Home() {
                   Get Started Now
                 </Link>
 
-                <button className="">
-                  Learn More
-                </button>
               </div>
             </div>
             <div>

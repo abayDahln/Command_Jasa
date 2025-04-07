@@ -39,7 +39,7 @@ function Login() {
           <h2 className="mt-6 text-3xl font-bold" style={{ color: colors.textPrimary }}>Register your account</h2>
           <p className="mt-2 text-sm" style={{ color: colors.textSecondary }}>
             Or{' '}
-            <Link to="/login" className="text-[#8c9aff] hover:text-[#c1b6fe]">
+            <Link to="/Command_Jasa/login" className="text-[#8c9aff] hover:text-[#c1b6fe]">
               have an account
             </Link>
           </p>
