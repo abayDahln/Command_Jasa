@@ -42,7 +42,7 @@ function Navbar() {
               <Link key={index} to={path} style={{ color: isActive(path) ? colors.white : colors.secondary }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = isActive(path) ? colors.primary : colors.optionally)}
                 onMouseLeave={(e) => (e.currentTarget.style.color = isActive(path) ? colors.white : colors.secondary)}>
-                {path.replace('/', '') || 'Home'}
+                {path.replace('/Command_Jasa/', '') || 'Home'}
               </Link>
             ))}
           </div>
