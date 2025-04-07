@@ -69,7 +69,7 @@ function Footer() {
             </div>
             <div className="space-y-2">
               <p className="text-gray-400">Email</p>
-              <a href={`${(gmailURL)}`} className="text-white hover:text-[#8c9aff]">abby11dahlan.com</a>
+              <a href={`${(gmailURL)}`} className="text-white hover:text-[#8c9aff]">abby11dahlan@gmail.com</a>
             </div>
             <div className="space-y-2">
               <p className="text-gray-400">Instagram</p>

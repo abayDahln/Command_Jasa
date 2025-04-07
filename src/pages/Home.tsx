@@ -27,10 +27,10 @@ function Home() {
   }, []);
 
   return (
-    <div style={{ paddingTop: 150 }}>
+    <div style={{ paddingTop: 100 }}>
       {/* Hero Section */}
       <div className="relative">
-        <div className="canvas-container">
+        {/* <div className="canvas-container">
           {isVisible && (
             <Canvas camera={{ position: [5, 5, 18] }} gl={{ alpha: true }} style={{ translate: 400 }}>
               <ambientLight intensity={1} />
@@ -39,7 +39,7 @@ function Home() {
               <OrbitControls />
             </Canvas>
           )}
-        </div>
+        </div> */}
         <section className="container mx-auto px-4 py-20 content">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className=''>
@@ -64,6 +64,9 @@ function Home() {
                   Learn More
                 </button>
               </div>
+            </div>
+            <div>
+              <img src="https://res.cloudinary.com/dueixuonp/image/upload/v1743994666/Cloudinary%203D/models/coding3d_kp1754-7-3-2025_packshot-front-left.png" alt=""/>
             </div>
 
 
