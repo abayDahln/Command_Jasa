@@ -107,7 +107,7 @@ function Home() {
                   <div className="mb-4" style={{ color: colors.optionally }}>{service.icon}</div>
                   <h3 className="text-xl font-bold mb-2" style={{ color: colors.textPrimary }}>{service.title}</h3>
                   <p className="text" style={{ color: colors.textSecondary }}>{service.description}</p>
-                  <Link to={`/services/${service.id}`} className=" mt-4 inline-block" style={{ color: colors.primary }}>
+                  <Link to={`/Command_Jasa/services/${service.id}`} className=" mt-4 inline-block" style={{ color: colors.primary }}>
                     Learn More
                   </Link>
                 </div>

@@ -21,7 +21,7 @@ function Login() {
           <h2 className="mt-6 text-3xl font-bold" style={{ color: colors.textPrimary }}>Sign in to your account</h2>
           <p className="mt-2 text-sm text-gray-400" style={{ color: colors.textSecondary }}>
             Or{' '}
-            <Link to="/register" className="text-[#8c9aff] hover:text-[#c1b6fe]" >
+            <Link to="Command_Jasa/register" className="text-[#8c9aff] hover:text-[#c1b6fe]" >
               create a new account
             </Link>
           </p>

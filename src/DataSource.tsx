@@ -45,42 +45,42 @@ const services = [
     {
       name: 'Andhika Khairul',
       role: '3D & Motion Designer',
-      image: '/resource/andhika.jpg'
+      image: '../../public/resource/andhika.jpg'
     },
     {
       name: 'Dzaki Rafif',
       role: 'Graphic & UI/UX Designer',
-      image: '/resource/apip.jpg'
+      image: '../../public/resource/apip.jpg'
     },
     {
       name: 'Ahmad Faqih',
       role: 'Full-Stack & Game Developer',
-      image: '/resource/faqih.jpg'
+      image: '../../public/resource/faqih.jpg'
     },
     {
       name: 'Hendri',
       role: 'Full-Stack Developer',
-      image: '/resource/hendri.jpg'
+      image: '../../public/resource/hendri.jpg'
     },
     {
       name: 'Abby Dahlan',
       role: 'Software Developer',
-      image: '/resource/abby.jpg'
+      image: '../../public/resource/abby.jpg'
     },
     {
       name: 'Farrel Gifari',
       role: 'Software Developer',
-      image: '/resource/farrel.jpg'
+      image: '../../public/resource/farrel.jpg'
     },
     {
       name: 'Rizki Syahrul',
       role: 'Mobile App Developer',
-      image: '/resource/rizki.jpg'
+      image: '../../public/resource/rizki.jpg'
     },
     {
       name: 'Eijaz Ramadhan',
       role: 'Game Developer',
-      image: '/resource/eijaz.jpg'
+      image: '../../public/resource/eijaz.jpg'
     },
   
   ];
