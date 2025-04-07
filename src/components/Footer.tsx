@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import colors from '../styles';
+import logo from '../../public/resource/command_spes_circle.jpg'
 
 function Footer() {
   const email = "abby11dahlan@gmail.com";
@@ -15,7 +16,7 @@ function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <img className="w-8 h-8" style={{ color: colors.optionally, width: 50, height: 50 }} src='../../public/resource/command_spes_circle.png' />
+              <img className="w-8 h-8" style={{ color: colors.optionally, width: 50, height: 50 }} src={logo} />
               <span className="text-xl font-bold ps-2" style={{ color: colors.textPrimary }}>CJasa</span>
             </Link>
             <div className="text-gray-400">

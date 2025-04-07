@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import colors from '../styles';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from '../../public/resource/command_spes_circle.jpg'
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -25,7 +26,7 @@ function Navbar() {
       <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-black/30 shadow-md transition-all duration-300 z-50 px-20 py-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <img className="w-8 h-8" style={{ width: 50, height: 50 }} src='../../public/resource/command_spes_circle.png' alt="Logo" />
+            <img className="w-8 h-8" style={{ width: 50, height: 50 }} src={logo} alt="Logo" />
             <span className="text-xl font-bold ps-2" style={{ color: colors.textPrimary }}>CJasa</span>
           </Link>
 
