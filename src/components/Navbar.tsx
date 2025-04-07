@@ -38,7 +38,7 @@ function Navbar() {
           </button>
 
           <div className="hidden md:flex space-x-8">
-            {['/Home', '/Services', '/Contact', '/Dashboard'].map((path, index) => (
+            {['/', '/Services', '/Contact', '/Dashboard'].map((path, index) => (
               <Link key={index} to={path} style={{ color: isActive(path) ? colors.white : colors.secondary }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = isActive(path) ? colors.primary : colors.optionally)}
                 onMouseLeave={(e) => (e.currentTarget.style.color = isActive(path) ? colors.white : colors.secondary)}>
